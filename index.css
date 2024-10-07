@@ -14,21 +14,37 @@ body {
     background-size: cover;
 }
 
-h1 {
-    color: #A2AEBB;
-    font-size: 32px;
-}
-
-h2 {
-    color: #A2AEBB;
-    font-size: 80px;
-    font-weight: 700;
-}
-
 header {
     padding: 12px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+header h1 {
+    color: #A2AEBB;
+    font-size: 32px;
+
+}
+
+header nav {
+    display: flex;
+    gap: 24px;
+}
+
+header nav .header-likns {
+    color: #A2AEBB;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav .header-likns:hover {
+    color: #7e8b9a;
+}
+
+header nav .header-likns:active {
+    color: #6d7885;
 }
 
 main {
@@ -39,8 +55,20 @@ main {
     justify-content: center;
 }
 
+main h2 {
+    color: #A2AEBB;
+    font-size: 80px;
+    font-weight: 700;
+}
 
-button {
+main p {
+    font-size: 24px;
+    color: #A2AEBB;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+}
+
+main button {
     border: none;
     background-color: #70B237;
     color: white;
@@ -51,19 +79,12 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+main button:hover {
     background-color: #8FCA5C;
 }
 
-button:active {
+main button:active {
     background-color: #477A1E;
-}
-
-p {
-    font-size: 24px;
-    color: #A2AEBB;
-    font-weight: 600;
-    margin: 0 0 24px 0;
 }
 
 @media (width <=768px) {
